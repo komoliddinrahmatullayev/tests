@@ -65,7 +65,8 @@ ul {
 }
 
 .header__title {
-    font-size: 60px;
+    /* font-size: 150px; */
+    font-size: calc(50px + 100 * (100vw / 1920));
 }
 
 .header__txt {
@@ -73,3 +74,10 @@ ul {
 }
 
 /* header end */
+@media (max-width: 767px) {
+    .header__title {
+        /* font-size: 150px; */
+        font-size: calc(50px + (100 + 100 * 0.7) * (100vw - 320px) /1920);
+    }
+
+}
